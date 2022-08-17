@@ -3,6 +3,7 @@
         <h1 class="text-center text-4xl font-bold mt-10">
             Базовые типы
         </h1>
+        <BaseTypes1 />
         <div class="flex items-center justify-center mb-5">
             <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div class="rounded-md shadow">
@@ -25,6 +26,7 @@
 </template>
 
 <script setup>
+import BaseTypes1 from '~~/components/BaseTypes.vue';
 useHead( {
     titleTemplate: 'Typescript - Базовые типы'
 } )
