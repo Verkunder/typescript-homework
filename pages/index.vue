@@ -24,7 +24,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang='ts'>
 import BaseUrl from "../components/config/BaseUrl.vue";
 import AlwaysStrict from "../components/config/AlwaysStrict.vue";
 import Target from "../components/config/Target.vue";
@@ -32,9 +32,19 @@ import Alias from "../components/config/Alias.vue";
 import Include from "../components/config/Include.vue";
 import Exclude from "../components/config/Exclude.vue";
 import TypeRoots from "../components/config/TypeRoots.vue";
-useHead( {
+useHead({
     titleTemplate: 'Typescript - конфиг'
-} )
+})
+
+interface IProps {
+    [key: string]: boolean
+}
+
+const test = ref<IProps[]>([{"test": true}, {"test2": false}])
+
+type Coordinate = [number, number]
+
+const testx = ref<Coordinate>([100, 3000])
 
 </script>
 
